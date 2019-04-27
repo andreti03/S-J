@@ -1,33 +1,6 @@
 import random
 import tkinter as tk
 
-ventana = tk.Tk()
-ventana.title("Math")
-ventana.iconbitmap(r"C:\Users\DELL\Desktop\Programacion\Juego de Matematicas\calculator-512.ico")
-ventana.geometry("390x400")
-ventana.config(bg="lightgreen")
-
-romper = False
-filas = 6
-columnas = 8
-listaProductos=(1,2,23,3,45,50,66,4,32,14,15,22,34,59,5,54)
-for pu in range (filas):
-    for pi in range (0,columnas):
-        if len(listaProductos)>pi+pu*filas:
-            vollboton = tk.Button(text =pi,font=("courier", 18, "bold"))
-            vollboton.place(x=pi*50,y=(pu*50)+70)
-        else:
-            romper = True
-            break
-    if romper:
-        break
-"""
-CHOICE = str(input("!Bienvenido a un curso de matemática elemental!" + 
-               "\n" + "Elige que tipo de curso te gustaría realizar" + 
-               "\n" + "Escribe alguna de las siguientes opciones SIN tildes"
-               + "\n" + "suma - resta - multiplicacion - division" + "\n"
-               + ": \t"))
-"""
 def mult(n):
     sumador = 0
     for q in range(n):
@@ -119,4 +92,18 @@ def what_test(n):
         if type(x)== int:
             return div(x)
         
+ventana = tk.Tk()
+ventana.title("Math")
+ventana.iconbitmap(r"C:\Users\DELL\Desktop\Programacion\Juego de Matematicas\calculator-512.ico")
+ventana.geometry("390x400")
+ventana.config(bg="lightgreen")
+
+
+CHOICE = "!Bienvenido a un curso de matemática elemental! Elige que tipo de curso te gustaría realizar\
+     Escribe alguna de las siguientes opciones SIN tildes suma - resta - multiplicacion - division:  "
+
+label1 = tk.Label(ventana, text="", font=("courier", 12, "bold"), bg="lightgreen", justify=tk.LEFT)#Ubica el texto anteriormente(linea 10)
+label1.grid(row=1,column=1)
+label1.configure(text=CHOICE)
+
 ventana.mainloop()
