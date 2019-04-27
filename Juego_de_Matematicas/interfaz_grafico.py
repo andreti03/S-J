@@ -71,6 +71,7 @@ def div(n):
 def what_test(n):
 
     N = n.upper()
+
     if N == "SUMA":
         x= int(input("¡Bienvenido a un curso de suma!" + "\n" + 
               "¿Cuántas preguntas quiere?" + "\n" + ": \t"))
@@ -95,15 +96,18 @@ def what_test(n):
 ventana = tk.Tk()
 ventana.title("Math")
 ventana.iconbitmap(r"C:\Users\DELL\Desktop\Programacion\Juego de Matematicas\calculator-512.ico")
-ventana.geometry("390x400")
+ventana.geometry("500x500")
 ventana.config(bg="lightgreen")
 
 
-CHOICE = "!Bienvenido a un curso de matemática elemental! Elige que tipo de curso te gustaría realizar\
-     Escribe alguna de las siguientes opciones SIN tildes suma - resta - multiplicacion - division:  "
+label1 = tk.Label(ventana, wraplength= 500, text="!Bienvenido a un curso de matemática elemental! Elige que tipo de curso te gustaría realizar\
+     Escribe alguna de las siguientes opciones SIN tildes suma - resta - multiplicacion - division: ", font=("courier", 12, "bold"), bg="lightgreen", justify=tk.LEFT)#Ubica el texto anteriormente(linea 10)
+label1.place(x=0,y=0)
 
-label1 = tk.Label(ventana, text="", font=("courier", 12, "bold"), bg="lightgreen", justify=tk.LEFT)#Ubica el texto anteriormente(linea 10)
-label1.grid(row=1,column=1)
-label1.configure(text=CHOICE)
+Nota = tk.StringVar()
+texto = tk.Entry(ventana, textvariable=Nota, bg="lightgreen").place(x=10,y=80)
+
+what_test(str(Nota))
+
 
 ventana.mainloop()
