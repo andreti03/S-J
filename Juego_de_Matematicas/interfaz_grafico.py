@@ -4,8 +4,8 @@ import tkinter as tk
 def mult():
     vent = tk.Tk()
     vent.title("Multiplicacion")
-    vent.geometry("300x400")
-    vent.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
+    vent.geometry("350x400")
+#    vent.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
     vent.config(bg="lightblue")
     Td= tk.Label(vent,text="Bienvenido! al menu de Multiplicaciones ",bg="lightblue")
     Nota = tk.StringVar()
@@ -13,14 +13,14 @@ def mult():
     Td2= tk.Label(vent,text="Escribe el numero de Multiplicaciones que deseas ",bg="lightblue")
     Td.place(x=0,y=0)
     Td2.place(x=0,y=20)
-    tk.Button(vent,text="Guardar" ,bg="lightblue").place(x=150,y=360)
+    tk.Button(vent,text="Siguente" ,bg="lightblue").place(x=150,y=360)
     tk.Button(vent,text="Cancelar" ,bg="lightblue").place(x=60,y=360)
     
 def suma():
     vent3 = tk.Tk()
     vent3.title("Suma")
-    vent3.geometry("300x400")
-    vent3.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
+    vent3.geometry("350x400")
+#    vent3.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
     vent3.config(bg="lightblue")
     Td= tk.Label(vent3,text="Bienvenido! al menu de Sumas ",bg="lightblue")
     Nota = tk.StringVar()
@@ -28,7 +28,7 @@ def suma():
     Td2= tk.Label(vent3,text="Escribe el numero de Sumas que deseas realizar",bg="lightblue")
     Td.place(x=0,y=0)
     Td2.place(x=0,y=20)
-    tk.Button(vent3,text="Guardar" ,bg="lightblue").place(x=150,y=360)
+    tk.Button(vent3,text="Siguente" ,bg="lightblue").place(x=150,y=360)
     tk.Button(vent3,text="Cancelar" ,bg="lightblue").place(x=60,y=360)    
 
 def F_suma(n):
@@ -37,16 +37,17 @@ def F_suma(n):
             venta = tk.Tk()
             venta.title("Suma")
             venta.geometry("300x400")
-            venta.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
+#            venta.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
             venta.config(bg="lightblue")
+            
     
 
 
 def resta():
     vent1 = tk.Tk()
     vent1.title("Resta")
-    vent1.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
-    vent1.geometry("300x400")
+#    vent1.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
+    vent1.geometry("350x400")
     vent1.config(bg="lightblue")
     Td= tk.Label(vent1,text="Bienvenido! al menu de Resta ",bg="lightblue")
     Nota = tk.StringVar()
@@ -54,14 +55,14 @@ def resta():
     Td2= tk.Label(vent1,text="Escribe el numero de Restas que deseas realizar ",bg="lightblue")
     Td.place(x=0,y=0)
     Td2.place(x=0,y=20)
-    tk.Button(vent1,text="Guardar" ,bg="lightblue").place(x=150,y=360)
+    tk.Button(vent1,text="Siguente" ,bg="lightblue").place(x=150,y=360)
     tk.Button(vent1,text="Cancelar" ,bg="lightblue").place(x=60,y=360)    
     
 def div():
     vent2 = tk.Tk()
     vent2.title("Division")
-    vent2.geometry("300x400")
-    vent2.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
+    vent2.geometry("350x400")
+#    vent2.iconbitmap(r"C:\Users\DELL\Desktop\Proyecto_Programacion\Juego_de_Matematicas\Board_37532.ico")
     vent2.config(bg="lightblue")
     Td= tk.Label(vent2,text="Bienvenido! al menu de Divisiones ",bg="lightblue")
     Nota = tk.StringVar()
@@ -69,7 +70,7 @@ def div():
     Td2= tk.Label(vent2,text="Escribe el numero de Divisiones que deseas realizar ",bg="lightblue")
     Td.place(x=0,y=0)
     Td2.place(x=0,y=20)
-    tk.Button(vent2,text="Guardar" ,bg="lightblue").place(x=150,y=360)
+    tk.Button(vent2,text="Siguente" ,bg="lightblue").place(x=150,y=360)
     tk.Button(vent2,text="Cancelar" ,bg="lightblue").place(x=60,y=360)
 
 def randum():
@@ -118,8 +119,8 @@ def what_test(n):
         
 ventana = tk.Tk()
 ventana.title("Math")
-ventana.iconbitmap(r"C:\Users\DELL\Desktop\Programacion\Juego de Matematicas\calculator-512.ico")
-ventana.geometry("500x500")
+#ventana.iconbitmap(r"C:\Users\DELL\Desktop\Programacion\Juego de Matematicas\calculator-512.ico")
+ventana.geometry("550x500")
 ventana.config(bg="lightgreen")
 
 ubicar_botones()
